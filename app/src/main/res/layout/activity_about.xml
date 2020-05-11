@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aboutActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:title="Evasue Bible Study"
+        app:titleTextColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#af532c"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/toolbar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <ImageView
+        android:id="@+id/vlm_logo"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:src="@mipmap/graphic"
+        android:contentDescription="its vlm logo" />
+
+    <TextView
+        android:id="@+id/description"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vlm_desc"
+        />
+    <TextView
+        android:id="@+id/vlm_title"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BDU FELLOWSHIP VLM"/>
+    <TextView
+        android:id="@+id/separetor"
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:background="#000"
+        android:paddingTop="5dp" />
+
+    <TextView
+        android:id="@+id/feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ሀሳብ አስተያየታችሁን "
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/phno"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ስልክ ፡ 0943352812"
+        android:layout_below="@id/feedback"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="email"
+                android:clickable="true"
+                android:text="@string/email"
+                android:focusable="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/fb_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="40dp"
+            android:src="@mipmap/fb" />
+
+        <TextView
+            android:id="@+id/fb_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="45dp"
+            android:layout_toRightOf="@+id/fb_logo"
+            android:text="@string/fb_url"
+            android:textColorLink="#008ada"
+            android:textColor="#008ada"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/youtube_logo"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/fb_logo"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="309dp"
+            android:layout_marginRight="309dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/youtube_logo" />
+
+        <TextView
+            android:id="@+id/youtubeid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fb_url"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="98dp"
+            android:layout_marginLeft="98dp"
+            android:layout_marginTop="22dp"
+            android:text="@string/youtube_url"
+            android:textColorLink="#008ada"
+            android:textColor="#008ada"
+            android:focusable="true" />
+
+    </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

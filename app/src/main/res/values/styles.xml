@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- customize your code here -->
+        <item name="colorPrimary">#af532c</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundcolor">#fcfcfc</item>
+        <item name="cardcolor">#ffff</item>
+        <item name="textcolor">#808080</item>
+        <item name="tintcolor">#000</item>
+
+    </style>
+        <!-- Night Mode. -->
+   <!-- <style name="Darktheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#212121</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundcolor">#303030</item>
+        <item name="cardcolor">#424242</item>
+        <item name="textcolor">#fff</item>
+        <item name="tintcolor">#ffff</item
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+    </style>-->
+<style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+    <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+    <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+    <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+    <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+</style>
+
+
+</resources>

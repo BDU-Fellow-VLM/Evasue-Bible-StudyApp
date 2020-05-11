@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mekimsc.myapp.evasuebiblestudy">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" ></uses-permission>
+   <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/applogo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".study1Activity"/>
+        <activity android:name=".settingActivity" />
+        <activity android:name=".aboutActivity"/>
+        <activity android:name=".study2Activity"/>
+        <activity android:name=".study3Activity"/>
+        <activity android:name=".study4Activity"/>
+        <activity android:name=".study5Activity" />
+        <activity android:name=".study6Activity" />
+        <activity android:name=".study7Activity" />
+        <activity android:name=".study8Activity" />
+        <activity android:name=".study9Activity" />
+        <activity android:name=".study10Activity" />
+        <activity android:name=".study11Activity" />
+        <activity android:name=".study12Activity" />
+        <activity android:name=".splashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".discussion1" />
+        <activity android:name=".discussion2" />
+        <activity android:name=".discussion3" />
+        <activity android:name=".discussion4" />
+        <activity android:name=".discussion5" />
+        <activity android:name=".discussion6" />
+        <activity android:name=".discussion7" />
+        <activity android:name=".discussion8" />
+        <activity android:name=".discussion9" />
+        <activity android:name=".study13Activity" />
+        <activity android:name=".discussion10" />
+        <activity android:name=".discussion11" />
+        <activity android:name=".discussion12" />
+        <activity android:name=".discussion13" />
+        <activity android:name=".discussion14" />
+        <activity android:name=".study14Activity" />
+        <activity android:name=".study15Activity" />
+        <activity android:name=".discussion15" />
+        <activity android:name=".prefaceActivity"></activity>
+    </application>
+
+</manifest>
